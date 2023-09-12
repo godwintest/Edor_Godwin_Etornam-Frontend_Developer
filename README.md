@@ -1,70 +1,80 @@
-# Getting Started with Create React App
+## SpaceX Crew Landing Page API Integration With React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+A dynamic and responsive React application that displays information about SpaceX crew members. Users can search and filter the crew members based on various criteria. This app serves as a landing page to showcase SpaceX crew data in an elegant and user-friendly interface.
 
-In the project directory, you can run:
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+ * Search and Filter: Users can search for crew members by name and filter them based on their status, agency, and missions.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+* Responsive Design: The landing page is designed to be fully responsive, ensuring an optimal viewing experience on various devices and screen sizes.
 
-### `npm test`
+* Pagination: Crew members are displayed in a paginated data grid, allowing users to navigate through the list with ease.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* Data Visualization: Clicking on a crew member's profile card displays detailed information in a popup, enhancing the user experience.
 
-### `npm run build`
+* Optimized Queries: The app utilizes optimized queries to deliver quick search results without performance bottlenecks.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Changes Made
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## New Features:
+Crew Member Data Integration:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Added logic to fetch crew member data from the SpaceX Crew API.
+Implemented data mapping and rendering to display crew members on the landing page.
+Responsive Design:
 
-### `npm run eject`
+Ensured that the landing page layout remains responsive across various screen sizes and devices.
+Utilized CSS media queries and Flexbox for adaptive design.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## UI Enhancements:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## New Styling:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Introduced appropriate styling for crew member cards, including images and information.
+Adjusted color schemes and typography for a cohesive design.
+Filter and Search Updates:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Updated filter and search functionality to include new data fields from the SpaceX Crew API, such as agency and missions.
+Ensured a seamless user experience with optimized search queries.
 
-## Learn More
+## Documentation:
+Updated project README with comprehensive information about the changes, features, and how to run the app locally.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Testing
+Performed thorough testing of the app to validate the functionality and responsiveness across different browsers and devices.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Checklist
 
-### Code Splitting
+* Implemented SpaceX Crew API integration.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+* Ensured responsive design for all screen sizes.
 
-### Analyzing the Bundle Size
+* Updated UI for improved user experience.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+* Included clear and concise commit messages.
 
-### Making a Progressive Web App
+* Verified that all automated tests pass.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Additional Notes
+This README represents a significant enhancement to the React SpaceX Landing Page App, providing users with access to real-time crew member data. The codebase is thoroughly documented, and best practices have been followed to maintain code quality and readability.
 
-### Advanced Configuration
+## Built With
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+* React - JavaScript library for building user interfaces.
+* Tailwind CSS - A utility-first CSS framework for rapidly building custom designs.
+* Axios - Promise-based HTTP client for making requests to the SpaceX Crew API.
 
-### Deployment
+## Acknowledgments
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+SpaceX for providing the Crew API.
+The React community for their valuable contributions and resources.
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Contact
+Edor Godwin Etornam 
+Email - edorgodwin@gmail.com
+GitHub - https://github.com/godwintest
+Linkedin - https://linkedin.com/in/edorgodwin
