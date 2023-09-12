@@ -1,0 +1,120 @@
+/* Base styles for larger screens */
+.banner {
+  background-image: linear-gradient(147deg, #000000 0%, #0a1822 0%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 0px 60px 0px;
+  border-radius: 4px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.left-column {
+  width: 50%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.left-column h1, p, a {
+  color: white;
+}
+
+.right-column {
+  width: 50%;
+}
+
+.button{
+  padding: 10px 20px;
+    background-color: #0074D9;
+    font-size: 18px;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  margin-bottom: -4px;
+  border-radius: 4px;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+.left-column h1 {
+  font-size: 36px;
+}
+
+.left-column p {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: white;
+}
+
+
+
+
+
+/*------------------    Devices Responsiveness    ------------ */
+
+
+
+/* Media query for Mobile Phones */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+  }
+
+  .left-column{
+    padding-bottom: 50px;
+  }
+
+  .left-column h1{
+    font-size: 27px;
+  }
+
+  .left-column, .right-column {
+    flex: none; /* Reset column widths for smaller screens */
+    width: 100%; /* Full width for columns on smaller screens */
+    text-align: center;
+  }
+}
+
+
+
+
+/* Media query for Tablets */
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+  }
+
+  .left-column{
+    padding-bottom: 50px;
+  }
+
+  .left-column, .right-column {
+    flex: none; /* Reset column widths for smaller screens */
+    width: 100%; /* Full width for columns on smaller screens */
+    text-align: center;
+  }
+}
