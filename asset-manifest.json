@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Edor_Godwin_Etornam-Frontend_Developer/static/css/main.f7c15421.css",
+    "main.css": "/Edor_Godwin_Etornam-Frontend_Developer/static/css/main.b5a1a62e.css",
     "main.js": "/Edor_Godwin_Etornam-Frontend_Developer/static/js/main.7c1e01b6.js",
     "static/js/787.99934c17.chunk.js": "/Edor_Godwin_Etornam-Frontend_Developer/static/js/787.99934c17.chunk.js",
     "static/media/spacex_hero.jpg": "/Edor_Godwin_Etornam-Frontend_Developer/static/media/spacex_hero.dc2af21ec0faa99844bf.jpg",
     "index.html": "/Edor_Godwin_Etornam-Frontend_Developer/index.html",
-    "main.f7c15421.css.map": "/Edor_Godwin_Etornam-Frontend_Developer/static/css/main.f7c15421.css.map",
+    "main.b5a1a62e.css.map": "/Edor_Godwin_Etornam-Frontend_Developer/static/css/main.b5a1a62e.css.map",
     "main.7c1e01b6.js.map": "/Edor_Godwin_Etornam-Frontend_Developer/static/js/main.7c1e01b6.js.map",
     "787.99934c17.chunk.js.map": "/Edor_Godwin_Etornam-Frontend_Developer/static/js/787.99934c17.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f7c15421.css",
+    "static/css/main.b5a1a62e.css",
     "static/js/main.7c1e01b6.js"
   ]
 }
