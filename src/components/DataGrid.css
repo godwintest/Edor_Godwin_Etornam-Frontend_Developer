@@ -25,7 +25,7 @@
   .heading{
     background-color: #084369;
     text-align: center;
-    margin: 10px 550px;
+    margin: 12px 450px;
     padding: 10px 0px;
     color: white;
     border-radius: 5px;
@@ -40,7 +40,7 @@
   }
 
   .space{
-    margin-top: 19px;
+    margin-top: 20px;
   }
   
   /* Style each card item */
@@ -235,7 +235,7 @@ input, select{
 /*------------------    Devices Responsiveness    ------------ */
 
 /* Media Query For Mobile Phone */
-@media (max-width: 768px) {
+@media (min-width: 500px) and (max-width: 768px) {
   .popup {
     max-width: 100%; /* Make it full-width on smaller screens */
   }
@@ -270,29 +270,30 @@ input, select{
 
 
 /* Media Query For Small Devices */
-/* @media (max-width: 480px) {
+@media (max-width: 500px) {
   .data-grid {
-    padding: 20px 10px;
+    padding: 20px 7px;
+    margin: 7px;
   }
 
   .data-grid ul{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
 
   .filter-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
 
-  .btn-filter{
+  /* .btn-filter{
     grid-column: span 2;
-  }
+  } */
 
   .heading{
     display: none;
   }
-} */
+}
 
 
 
@@ -311,7 +312,7 @@ input, select{
   }
 
   .filter-container {
-    /* Adjust the layout for filters on tablets */
+    /* Adjust the layout for filters on tablet */
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
