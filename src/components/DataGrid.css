@@ -1,231 +1,246 @@
-/* Style the container for the data grid */
-
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
+
+/*----------------- SEARCH FORM FILTER  --------------------*/
+
+.filter-container{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 30px 0;
+}
+
+input, select{
+  line-height: 20px;
+  min-height: 28px;
+  /* padding: 7px; */
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 16px;
+  background: #fbfbfb;
+  border: 2px solid transparent;
+  /* height: 36px; */
+  box-shadow: 0 0 0 1px #dddddd, 0 2px 4px 0 rgb(0 0 0 / 7%), 0 1px 1.5px 0 rgb(0 0 0 / 5%);
+  :focus{
+      border: 2px solid #000;
+      border-radius: 4px;
+  }
+}
+
+.heading{
+  background-color: #084369;
+  text-align: center;
+  margin: 12px 450px;
+  padding: 10px 0px;
+  color: white;
+  border-radius: 5px;
+  font-size: 25px;
+  text-transform: capitalize;
+}
+
+.space{
+  margin-top: 20px;
+}
+
+
+
+
+
+/*----------------- DATAGRID/CARD  --------------------*/
+
 .data-grid {
-    display: grid;
-    margin: 40px 20px 20px 20px;
-    padding: 30px 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    position: relative; /* Make it a stacking context for z-index */
-  }
+  display: grid;
+  margin: 40px 20px 20px 20px;
+  padding: 30px 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative; /* Make it a stacking context for z-index */
+}
 
-  h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
-    color: #000000;
-  }
+.data-grid ul{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
 
-  .heading{
-    background-color: #084369;
-    text-align: center;
-    margin: 12px 450px;
-    padding: 10px 0px;
-    color: white;
-    border-radius: 5px;
-    font-size: 25px;
-    text-transform: capitalize;
-  }
-  
-  .popup-overlay p {
-    font-size: 18px;
-    margin-bottom: 20px;
-    color: #000000;
-  }
+.data-grid li {
+  display: grid;
+  list-style: none;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.2s ease; /* Add a smooth hover effect */
+}
 
-  .space{
-    margin-top: 20px;
-  }
-  
-  /* Style each card item */
+.card:hover {
+  transform: translateY(-5px); /* Lift the card on hover */
+}
 
-  .data-grid ul{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-  }
+h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #000000;
+}
 
-  .data-grid li {
-    display: grid;
-    list-style: none;
-    margin: 10px;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    background-color: #f9f9f9;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    transition: transform 0.2s ease; /* Add a smooth hover effect */
-  }
+.responsive-img{
+  padding-bottom: 20px;
+}
 
-  .card:hover {
-    transform: translateY(-5px); /* Lift the card on hover */
-  }
 
-  .popup-title{
-    font-size: 20px;
-    font-weight: bold;
-  }
-  
-  /* Style the pagination controls */
-  .pagination {
-    margin-top: 20px;
-    text-align: center;
-  }
-  
-  .pagination button {
-    background-color: #007bff;
-    color: #fff;
-    font-weight: bold;
-    border: none;
-    border-radius: 5px;
-    padding: 9px 27px;
-    margin: 0 5px;
-    cursor: pointer;
-  }
-  
-  .pagination button:hover {
-    background-color: #0056b3;
-  }
-  
-  /* .pagination button:disabled {
+
+
+
+/*----------------- PAGINATION  --------------------*/
+
+.pagination {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.pagination button {
+  background-color: #007bff;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  padding: 9px 27px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.pagination button:hover {
+  background-color: #0056b3;
+}
+
+/* .pagination button:disabled {
     background-color: #ccc;
     cursor: not-allowed;
   } */
 
-  /* Style the popup overlay */
+
+
+
+
+/*----------------- POPUP --------------------*/
+
 .popup-overlay {
-    position: fixed; /* Position it fixed on the screen */
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000; /* To Ensure it's above other content */
-  }
-  
-  /* Style for the popup */
-  .popup {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    max-width: 80%; /* Limit the width for responsiveness */
-    position: relative;
-  }
-
-
-   .popup h2, .popup p {
-   margin: 0;
-   padding: 10px 0;
+  position: fixed; /* Position it fixed on the screen */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* To Ensure it's above other content */
 }
-  
-  .close-btn {
-    position: absolute;
-    top: 3px;
-    right: 10px;
-    font-size: 30px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: color 0.2s ease;
-  }
 
-  .close-btn:hover {
-    color: #eb1717; /* Change the close button color on hover */
-  }
+.popup {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 80%; /* Limit the width for responsiveness */
+  position: relative;
+}
 
-  
-/* Added a subtle border to the popup */
+ .popup h2, .popup p {
+ margin: 0;
+ padding: 10px 0;
+}
+
+.close-btn {
+  position: absolute;
+  top: 3px;
+  right: 10px;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.close-btn:hover {
+  color: #eb1717; /* Change the close button color on hover */
+}
+
 .popup::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    pointer-events: none; /* Allow interaction with popup content */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-  
-
-  .green-status{
-    color: darkcyan;
-    font-weight: bold;
-  }
-
-  .red-status{
-    color: crimson;
-    font-weight: bold;
-  }
-
-  .filter-container{
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin: 30px 0;
-  }
-
-  button{
-    padding: 10px 30px;
-    background-color: #0074D9;
-    font-size: 20px;
-    border: none;
-    color: white;
-    border-radius: 4px;
-    cursor: pointer;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  pointer-events: none; /* Allow interaction with popup content */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-input, select{
-    line-height: 20px;
-    min-height: 28px;
-    /* padding: 7px; */
-    padding: 8px 16px;
-    border-radius: 4px;
-    font-size: 16px;
-    background: #fbfbfb;
-    border: 2px solid transparent;
-    /* height: 36px; */
-    box-shadow: 0 0 0 1px #dddddd, 0 2px 4px 0 rgb(0 0 0 / 7%), 0 1px 1.5px 0 rgb(0 0 0 / 5%);
-    :focus{
-        border: 2px solid #000;
-        border-radius: 4px;
-    }
+.green-status{
+  color: darkcyan;
+  font-weight: bold;
+}
+
+.red-status{
+  color: crimson;
+  font-weight: bold;
+}
+
+button{
+  padding: 10px 30px;
+  background-color: #0074D9;
+  font-size: 20px;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 .wikipedia-btn-container a{
-    background-color: #007bff;
-    color: #fff;
-    font-weight: bold;
-    border: none;
-    border-radius: 5px;
-    padding: 11px 70px;
-    cursor: pointer;
-    text-decoration: none;
+  background-color: #007bff;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  padding: 11px 70px;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 .wikipedia-btn-container{
-  text-align: center;
-  margin-top: 40px;
+text-align: center;
+margin-top: 40px;
 }
 
 .popup-name{
-  text-align: center;
-  color: darkcyan;
-  font-size: 30px;
+text-align: center;
+color: darkcyan;
+font-size: 30px;
+}
+
+.popup-overlay p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+.popup-title{
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .status{
-  margin-bottom: 30px;
+margin-bottom: 30px;
 }
 
 
@@ -235,7 +250,7 @@ input, select{
 /*------------------    Devices Responsiveness    ------------ */
 
 /* Media Query For Mobile Phone */
-@media (min-width: 500px) and (max-width: 768px) {
+@media (min-width: 480px) and (max-width: 768px) {
   .popup {
     max-width: 100%; /* Make it full-width on smaller screens */
   }
@@ -268,9 +283,8 @@ input, select{
 
 
 
-
 /* Media Query For Small Devices */
-@media (max-width: 500px) {
+@media (max-width: 480px) {
   .data-grid {
     padding: 20px 7px;
     margin: 7px;
@@ -286,14 +300,48 @@ input, select{
     grid-template-columns: repeat(1, 1fr);
   }
 
-  /* .btn-filter{
-    grid-column: span 2;
-  } */
-
   .heading{
     display: none;
   }
+
+  .popup {
+  
+    padding: 8px;
+    max-width: 100%; /* Limit the width for responsiveness */
+  }
+  
+  .popup-name{
+    text-align: center;
+    color: darkcyan;
+    font-size: 18px;
+    }
+  
+  .wikipedia-btn-container a{
+    padding: 11px 35px;
+  }
+  
+  .wikipedia-btn-container{
+  text-align: center;
+  margin-top: 40px;
+  }
+  
+  .close-btn {
+    top: 3px;
+    right: 10px;
+    font-size: 35px;
+  }
+
+  .pagination button {
+    padding: 9px 15px;
+    margin: 0 5px;
+  }
+  
+    /* .btn-filter{
+      grid-column: span 2;
+    } */
 }
+
+
 
 
 
@@ -302,7 +350,6 @@ input, select{
 /* Media Query For Tablets */
 @media (min-width: 768px) and (max-width:1350px) {
   .data-grid {
-    /* Reduce padding or font size */
     padding: 20px 10px;
   }
 
@@ -312,7 +359,6 @@ input, select{
   }
 
   .filter-container {
-    /* Adjust the layout for filters on tablet */
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }

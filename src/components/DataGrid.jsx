@@ -125,7 +125,7 @@ const DataGrid = ({ data }) => {
               &times;
             </span>
             <h2 className='popup-name'>{selectedItem.name}</h2>
-            <img src={selectedItem.image} alt={selectedItem.name} style={{ width: '350px', height: '250px'}} />
+            <img src={selectedItem.image} alt={selectedItem.name} style={{ width: '100%', height: '250px'}} />
             <p><span className="popup-title">Agency:</span> {selectedItem.agency}</p>
             <p><span className="popup-title">Launches:</span> {selectedItem.launches.length}</p>
             <p className='status'><span className="popup-title">Status:</span> {selectedItem.status === "active" ? ( <span className='green-status'>{selectedItem.status}</span>) : ( <span className='red-status'>{selectedItem.status}</span>)}</p>
